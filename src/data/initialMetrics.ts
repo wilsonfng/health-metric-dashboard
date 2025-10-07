@@ -1,0 +1,120 @@
+import { HealthMetric } from '../types/metrics';
+
+// Initial metric configurations based on reference image
+export const initialMetrics: HealthMetric[] = [
+  {
+    id: 'systolic-pressure',
+    name: 'Systolic Pressure',
+    unit: 'mmHg',
+    minValue: 0,
+    maxValue: 200,
+    thresholds: [
+      { id: 'sys-t1', value: 80 },
+      { id: 'sys-t2', value: 90 },
+      { id: 'sys-t3', value: 120 },
+      { id: 'sys-t4', value: 170 },
+    ],
+  },
+  {
+    id: 'diastolic-pressure',
+    name: 'Diastolic Pressure',
+    unit: 'mmHg',
+    minValue: 0,
+    maxValue: 130,
+    thresholds: [
+      { id: 'dias-t1', value: 40 },
+      { id: 'dias-t2', value: 50 },
+      { id: 'dias-t3', value: 80 },
+      { id: 'dias-t4', value: 100 },
+    ],
+  },
+  {
+    id: 'pulse',
+    name: 'Pulse',
+    unit: 'bpm',
+    minValue: 0,
+    maxValue: 150,
+    thresholds: [
+      { id: 'pulse-t1', value: 30 },
+      { id: 'pulse-t2', value: 60 },
+      { id: 'pulse-t3', value: 70 },
+      { id: 'pulse-t4', value: 90 },
+    ],
+  },
+  {
+    id: 'o2-saturation',
+    name: 'O2 Saturation',
+    unit: '%',
+    minValue: 0,
+    maxValue: 100,
+    thresholds: [
+      { id: 'o2-t1', value: 90 },
+      { id: 'o2-t2', value: 95 },
+    ],
+  },
+  {
+    id: 'fasting-glucose',
+    name: 'Fasting Glucose',
+    unit: 'mg/dL',
+    minValue: 0,
+    maxValue: 200,
+    thresholds: [
+      { id: 'fg-t1', value: 60 },
+      { id: 'fg-t2', value: 80 },
+      { id: 'fg-t3', value: 100 },
+      { id: 'fg-t4', value: 125 },
+    ],
+  },
+  {
+    id: 'glucose-after-breakfast',
+    name: 'Glucose After Breakfast',
+    unit: 'mg/dL',
+    minValue: 0,
+    maxValue: 200,
+    thresholds: [
+      { id: 'gab-t1', value: 90 },
+      { id: 'gab-t2', value: 110 },
+      { id: 'gab-t3', value: 140 },
+      { id: 'gab-t4', value: 125 },
+    ],
+  },
+  {
+    id: 'glucose-before-lunch',
+    name: 'Glucose Before Lunch',
+    unit: 'mg/dL',
+    minValue: 0,
+    maxValue: 200,
+    thresholds: [
+      { id: 'gbl-t1', value: 60 },
+      { id: 'gbl-t2', value: 80 },
+      { id: 'gbl-t3', value: 100 },
+      { id: 'gbl-t4', value: 125 },
+    ],
+  },
+  {
+    id: 'glucose-after-lunch',
+    name: 'Glucose After Lunch',
+    unit: 'mg/dL',
+    minValue: 0,
+    maxValue: 200,
+    thresholds: [
+      { id: 'gal-t1', value: 60 },
+      { id: 'gal-t2', value: 80 },
+      { id: 'gal-t3', value: 100 },
+      { id: 'gal-t4', value: 125 },
+    ],
+  },
+  {
+    id: 'glucose-before-dinner',
+    name: 'Glucose Before Dinner',
+    unit: 'mg/dL',
+    minValue: 0,
+    maxValue: 200,
+    thresholds: [
+      { id: 'gbd-t1', value: 60 },
+      { id: 'gbd-t2', value: 80 },
+      { id: 'gbd-t3', value: 100 },
+      { id: 'gbd-t4', value: 125 },
+    ],
+  },
+];
